@@ -61,7 +61,7 @@ body {
 }
 
 .greeting {
-  background: url(/img/index/greeting/greeting.png);
+  background: url(img/index/greeting/greeting.png);
   background-size: cover;
   background-position: center;
   width: 100%;
