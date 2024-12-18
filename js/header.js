@@ -6,7 +6,7 @@ function updateNavigation() {
         headerNavigation.innerHTML = `
             <div class="header-flex">
                 <div class="logo">
-                    <a href="index.html"><img src="/img/header/logo.png" alt="Логотип"></a>
+                    <a href="index.html"><img src="img/header/logo.png" alt="Логотип"></a>
                 </div>
                 <div class="icons">
                   <div class="header-navigation-button" id="cart-icon">
@@ -36,7 +36,7 @@ function updateNavigation() {
                   </div>
               </div>
               <div class="logo">
-                  <a href="index.html"><img src="/img/header/logo.png" alt="Логотип"></a>
+                  <a href="index.html"><img src="img/header/logo.png" alt="Логотип"></a>
               </div>
               <div class="header-flex" id="additionalNavItems">
                   <div class="header-navigation-button">
