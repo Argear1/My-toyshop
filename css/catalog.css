@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto";
+  background-color: #D9D9D9;
+  color: #59321C;
+  overflow-y: scroll
+}
+
+.header-navigation {
+  display: flex;
+  justify-content: space-around;
+  background-color: #8C694A;
+  position: relative;
+  z-index: 2;
+  transition: position 0.3s ease;
+}
+
+.header-navigation.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.header-flex {
+  display: flex;
+  justify-content: space-around;
+  width: 33%;
+}
+
+.header-navigation-button {
+  margin: 40px 0;
+}
+
+.header-navigation-button a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.5s ease;
+}
+
+.header-navigation-button a:hover {
+  border-bottom: 2px solid;
+}
+
+.logo {
+  align-items: center;
+}
+
+.logo img {
+  width: 100px;
+  height: 100%;
+}
+
+.container {
+  padding: 100px 15% 50px 15%;;
+}
+
+.title {
+  font-size: 30px;
+  padding-bottom: 50px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart {
+  padding: 0 1%;
+}
+
+.cart-img {
+  cursor: pointer;
+}
+
+.cart-img img {
+  width: 100%;
+  max-width: 350px;
+  max-height: 350px;
+  height: auto;
+}
+
+.cart-title {
+  padding: 5px 0;
+  font-size: 20px;
+}
+
+.cart-price {
+  font-size: 15px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #d9d9d9;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 600px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: -10px;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-flex-mini {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-image {
+  flex: 1;
+  /* Занимает 50% ширины */
+  margin-right: 20px;
+  /* Отступ справа от изображения */
+}
+
+.modal-details {
+  flex: 1;
+  /* Занимает 50% ширины */
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
+}
+
+.circle-button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #59321C;
+  color: #59321C;
+  font-size: 20px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+#modalQuantityValue {
+  font-size: 20px;
+}
+
+.add-to-cart-button {
+  margin-top: 15px;
+  /* Отступ сверху для отделения от цены */
+  padding: 10px 20px;
+  background-color: #59321C;
+  /* Цвет фона кнопки */
+  color: white;
+  /* Цвет текста */
+  border: none;
+  /* Убираем рамку */
+  border-radius: 5px;
+  /* Закругленные углы */
+  cursor: pointer;
+  /* Курсор при наведении */
+  font-size: 16px;
+  /* Размер шрифта */
+}
+
+.add-to-cart-button:hover {
+  background-color: #7a4a3e;
+  /* Цвет фона при наведении */
+}
+
+footer {
+  border-top: 2px solid #59321C;
+  margin: 100px 15% 50px 15%;
+}
+
+.footer-content {
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  cursor: default;
+}
+
+.footer-navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+}
+
+.footer-title {
+  font-weight: 700;
+}
+
+.footer-text {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  line-height: 30px;
+}
+
+.footer-text a {
+  text-decoration: none;
+  color: #59321C;
+  cursor: pointer;
+}
+
+.footer-info {
+  line-height: 30px;
+}
+
+.footer-under {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-logo {
+  display: none;
+}
+
+#nav-items {
+  display: flex;
+  /* По умолчанию показываем элементы навигации */
+}
+
+#nav-items-overlay {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+
+#menu-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #D9D9D9;
+  z-index: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#menu-overlay a {
+  color: #59321C;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.icons {
+  display: flex;
+}
+
+@media (max-width: 900px) {
+  #nav-items {
+    display: none;
+    /* Скрыть навигационные кнопки на узком экране */
+  }
+
+  #cart-icon a,
+  #menu-icon a {
+    display: block;
+    color: #fff;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 30px;
+  }
+
+  .header-flex {
+    width: 80%;
+    justify-content: space-between;
+  }
+
+  .header-navigation-button {
+    text-align: end;
+    align-items: end;
+    display: flex;
+    margin: auto;
+  }
+
+  .header-navigation-button a {
+    transition: none;
+  }
+
+  .header-navigation-button:hover a {
+    border: none;
+  }
+
+  .footer-navigation {
+    width: 100%;
+  }
+
+  .footer-under {
+    width: 100%;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    font-size: 12px;
+  }
+
+  .footer-title {
+    font-size: 15px;
+  }
+
+  .footer-forbuyers {
+    width: 125px;
+  }
+
+  .footer-info {
+    width: 125px;
+  }
+
+  .footer-logo {
+    display: block;
+  }
+
+  .container {
+    padding: 100px 0 50px;
+  }
+
+  .content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .mt {
+    margin-top: 80px;
+  }
+
+  .modal-content {
+    width: 360px;
+    margin: 120px auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 34px;
+  }
+
+  .close {
+    margin-top: -20px;
+    text-align: end;
+    margin-right: -24px;
+  }
+
+  .modal-flex {
+    flex-direction: column;
+  }
+
+  .modal-image {
+    margin-right: 0;
+  }
+
+  .modal-image img {
+    max-width: 100%;
+  }
+
+  .quantity-controls {
+    padding-right: 0;
+  }
+}

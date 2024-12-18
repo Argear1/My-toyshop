@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ЛАПКИ</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-navigation" id="headerNavigation">
+      <div class="header-flex" id="navItems">
+        <div class="header-navigation-button">
+          <a href="toys.html">ИГРУШКИ</a>
+        </div>
+        <div class="header-navigation-button">
+          <a href="cloth.html">ОДЕЖДА</a>
+        </div>
+        <div class="header-navigation-button">
+          <a href="accessories.html">АКСЕССУАРЫ</a>
+        </div>
+      </div>
+      <div class="logo">
+        <a href="index.html"><img src="img/header/logo.png" alt="Логотип"></a>
+      </div>
+      <div class="header-flex" id="additionalNavItems">
+        <div class="header-navigation-button">
+          <a href="aboutus.html">О НАС</a>
+        </div>
+        <div class="header-navigation-button">
+          <a href="delivery.html">ДОСТАВКА И ОПЛАТА</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="menu-overlay" onclick="closeMenu()">
+      <div id="nav-items-overlay">
+        <a href="toys.html">ИГРУШКИ</a>
+        <a href="cloth.html">ОДЕЖДА</a>
+        <a href="accessories.html">АКСЕССУАРЫ</a>
+        <a href="aboutus.html">О НАС</a>
+        <a href="delivery.html">ДОСТАВКА И ОПЛАТА</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="greeting">
+    <div class="greeting-content">
+      <div class="greeting-content-text1">
+        <p>ПУШИСТЫЙ СТИЛЬ</p>
+      </div>
+      <div class="greeting-content-text2">
+        <p>ДЛЯ КАЖДОГО ДНЯ!</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="aboutus">
+    <div class="aboutus-text">
+      <p>Жизнь с собакой — это постоянные приключения! Они заставляют нас смеяться и вдохновляют открыться миру. Учат не спешить
+      и замечать приятное в мелочах. Через наши изделия мы дарим вашим питомцам новые эмоции от игр и возможность
+      почувствовать себя добытчиком, а с вами мы делимся своим ощущением уюта и красоты.</p>
+    </div>
+  </div>
+
+  <div class="popular">
+    <div class="popular-title">ПОПУЛЯРНЫЕ ТОВАРЫ</div>
+    <div class="slider-container">
+      <div class="popular-content" id="slider">
+        <div class="popular-cart">
+          <div class="popular-cart-img">
+            <img src="img/index/popular/winter overalls.png" alt="">
+          </div>
+          <div class="popular-cart-title">
+            <p>КОМБИНЕЗОН ЗИМНИЙ</p>
+          </div>
+          <div class="popular-cart-price">
+            <p>5000 ₽</p>
+          </div>
+        </div>
+        <div class="popular-cart">
+          <div class="popular-cart-img">
+            <img src="img/index/popular/winter boots.png" alt="">
+          </div>
+          <div class="popular-cart-title">
+            <p>БОТИНКИ ЗИМНИЕ</p>
+          </div>
+          <div class="popular-cart-price">
+            <p>3000 ₽</p>
+          </div>
+        </div>
+        <div class="popular-cart">
+          <div class="popular-cart-img">
+            <img src="img/index/popular/puffy vest.png" alt="">
+          </div>
+          <div class="popular-cart-title">
+            <p>ЖИЛЕТКА ДУТАЯ</p>
+          </div>
+          <div class="popular-cart-price">
+            <p>4000 ₽</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="catalog-navigation">
+    <div class="catalog-navigation-title">
+      <p>НАВИГАЦИЯ</p>
+    </div>
+    <div class="catalog-navigation-content">
+      <div class="catalog-navigation-inner" id="catalogSlider">
+        <div class="catalog-navigation-cart">
+          <div class="catalog-navigation-cart-img">
+            <a href="cloth.html"><img src="img/index/catalog-navigation/cloth.png" alt=""></a>
+          </div>
+          <div class="catalog-navigation-cart-title">
+            <p>ОДЕЖДА</p>
+          </div>
+        </div>
+        <div class="catalog-navigation-cart">
+          <div class="catalog-navigation-cart-img">
+            <a href="toys.html"><img src="img/index/catalog-navigation/toys.png" alt=""></a>
+          </div>
+          <div class="catalog-navigation-cart-title">
+            <p>ИГРУШКИ</p>
+          </div>
+        </div>
+        <div class="catalog-navigation-cart">
+          <div class="catalog-navigation-cart-img">
+            <a href="accessories.html"><img src="img/index/catalog-navigation/accessories.png" alt=""></a>
+          </div>
+          <div class="catalog-navigation-cart-title">
+            <p>АКСЕССУАРЫ</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="advantages">
+    <div class="advantages-title">
+      <p>ПРЕИМУЩЕСТВА</p>
+    </div>
+    <div class="advantages-content">
+      <div class="advantages-cart">
+        <div class="advantages-cart-img">
+          <img src="img/index/advantages/handmade.png" alt="">
+        </div>
+        <div class="advantages-cart-title">
+          <p>РУЧНАЯ РАБОТА</p>
+        </div>
+        <div class="advantages-cart-text">
+          <p>Все наши изделия мы создаем своими руками.
+            Поэтому каждая вещица наполнена любовью</p>
+        </div>
+      </div>
+      <div class="advantages-cart">
+        <div class="advantages-cart-img">
+          <img src="img/index/advantages/functionality.png" alt="">
+        </div>
+        <div class="advantages-cart-title">
+          <p>ФУНКЦИОНАЛЬНОСТЬ</p>
+        </div>
+        <div class="advantages-cart-text">
+          <p>Мы стараемся сделать не просто красивые вещи, но и предложить
+            вам удобные функциональные сценарии их применения</p>
+        </div>
+      </div>
+      <div class="advantages-cart">
+        <div class="advantages-cart-img">
+          <img src="img/index/advantages/care and attention.png" alt="">
+        </div>
+        <div class="advantages-cart-title">
+          <p>ЗАБОТА И ВНИМАНИЕ</p>
+        </div>
+        <div class="advantages-cart-text">
+          <p>Мы совершенствуемся и развиваемся
+            благодаря вашим отзывам и пожеланиям</p>
+        </div>
+      </div>
+    </div>
+    <div class="advantages-button">
+      <a href="aboutus.html">ПОДРОБНЕЕ О НАС</a>
+    </div>
+  </div>
+
+  <div class="reviews-block">
+    <div class="reviews-title">
+      <p>ОТЗЫВЫ</p>
+    </div>  
+    <div class="photos-container">
+      <div class="large-photo">
+        <img src="img/index/reviews/large-photo.png" alt="Большая фотография">
+      </div>
+      <div class="small-photos">
+        <img src="img/index/reviews/small-photo1.png" alt="Маленькая фотография 1">
+        <img src="img/index/reviews/small-photo2.png" alt="Маленькая фотография 2">
+        <img src="img/index/reviews/small-photo3.png" alt="Маленькая фотография 3">
+        <img src="img/index/reviews/small-photo4.png" alt="Маленькая фотография 4">
+      </div>
+    </div>
+  </div>
+
+  <div class="contacts">
+    <div class="contacts-title">
+      <p>КОНТАКТЫ</p>
+    </div>
+    <div class="contacts-navigation">
+      <div class="contacts-navigation-button">
+        <a href="tel:+79127338158" target="_blank"><img src="https://img.icons8.com/?size=100&id=533&format=png&color=FFFFFF" alt=""></a>
+      </div>
+      <div class="contacts-navigation-button">
+        <a href="https://t.me/elena_maisheva" target="_blank"><img src="https://img.icons8.com/?size=100&id=45163&format=png&color=FFFFFF" alt=""></a>
+      </div>
+      <div class="contacts-navigation-button">
+        <a href="https://wa.me/79127338158" target="_blank"><img src="https://img.icons8.com/?size=100&id=2Na7He7N5hNf&format=png&color=FFFFFF" alt=""></a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-navigation">
+        <div class="footer-catalog">
+          <div class="footer-title">
+            <p>КАТАЛОГ</p>
+          </div>
+          <div class="footer-text">
+            <a href="toys.html">ИГРУШКИ</a>
+            <a href="cloth.html">ОДЕЖДА</a>
+            <a href="accessories.html">АКСЕССУАРЫ</a>
+          </div>
+        </div>
+        <div class="footer-forbuyers">
+          <div class="footer-title">
+            <p>ПОКУПАТЕЛЯМ</p>
+          </div>
+          <div class="footer-text">
+            <a href="aboutus.html">О НАС</a>
+            <a href="delivery.html">ДОСТАВКА И ОПЛАТА</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-under">
+        <div class="footer-logo">
+          <div class="logo">
+            <a href="index.html"><img src="img/header/logo.png" alt="Логотип"></a>
+          </div>
+        </div>
+        <div class="footer-info">
+          <p>ЕЛЕНА МАИШЕВА</p>
+          <p>+7 (900) 000-00-00</p>
+          <p>MAIL@MAIL.RU</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/header.js"></script>
+  <script src="js/index-sliders.js"></script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>АКСЕССУАРЫ</title>
+  <link rel="stylesheet" href="css/catalog.css">
+</head>
+<body>
+  <header>
+    <div class="header-navigation" id="headerNavigation">
+      <div class="header-flex" id="navItems">
+        <div class="header-navigation-button">
+          <a href="toys.html">ИГРУШКИ</a>
+        </div>
+        <div class="header-navigation-button">
+          <a href="cloth.html">ОДЕЖДА</a>
+        </div>
+        <div class="header-navigation-button">
+          <a href="accessories.html">АКСЕССУАРЫ</a>
+        </div>
+      </div>
+      <div class="logo">
+        <a href="index.html"><img src="img/header/logo.png" alt="Логотип"></a>
+      </div>
+      <div class="header-flex" id="additionalNavItems">
+        <div class="header-navigation-button">
+          <a href="aboutus.html">О НАС</a>
+        </div>
+        <div class="header-navigation-button">
+          <a href="delivery.html">ДОСТАВКА И ОПЛАТА</a>
+        </div>
+      </div>
+    </div>
+  
+    <div id="menu-overlay" onclick="closeMenu()">
+      <div id="nav-items-overlay">
+        <a href="toys.html">ИГРУШКИ</a>
+        <a href="cloth.html">ОДЕЖДА</a>
+        <a href="accessories.html">АКСЕССУАРЫ</a>
+        <a href="aboutus.html">О НАС</a>
+        <a href="delivery.html">ДОСТАВКА И ОПЛАТА</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="title">
+      <p>АКСЕССУАРЫ</p>
+    </div>
+    <div class="content">
+      <div class="cart" onclick="openModal('КОЛЬЕ', 3000, 'img/accesessories/necklace.png')">
+        <div class="cart-img">
+          <img src="img/accesessories/necklace.png" alt="">
+        </div>
+        <div class="cart-title">
+          <p>КОЛЬЕ</p>
+        </div>
+        <div class="cart-price">
+          <p>3000 ₽</p>
+        </div>
+      </div>
+      <div class="cart mt" onclick="openModal('ПЛЕД', 2000, 'img/accesessories/handkerchief.png')">
+        <div class="cart-img">
+          <img src="img/accesessories/handkerchief.png" alt="">
+        </div>
+        <div class="cart-title">
+          <p>ПЛЕД</p>
+        </div>
+        <div class="cart-price">
+          <p>2000 ₽</p>
+        </div>
+      </div>
+      <div class="cart mt" onclick="openModal('ШЛЕЙКА', 2000, 'img/accesessories/blanket bed.png')">
+        <div class="cart-img">
+          <img src="img/accesessories/blanket bed.png" alt="">
+        </div>
+        <div class="cart-title">
+          <p>ШЛЕЙКА</p>
+        </div>
+        <div class="cart-price">
+          <p>2000 ₽</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="productModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div class="modal-flex">
+        <div class="modal-image">
+          <img id="modalImage" src="" alt="" style="width:100%;">
+        </div>
+        <div class="modal-details">
+          <div class="modal-flex-mini">
+            <h3 id="modalTitle"></h3>
+            <div class="quantity-controls">
+              <button class="circle-button" onclick="changeQuantity(-1)">&minus;</button>
+              <span id="modalQuantityValue">1</span>
+              <button class="circle-button" onclick="changeQuantity(1)">&plus;</button>
+            </div>
+          </div>
+          <p id="modalPrice"></p>
+          <button class="add-to-cart-button" onclick="addToCart()">Добавить в корзину</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-navigation">
+        <div class="footer-catalog">
+          <div class="footer-title">
+            <p>КАТАЛОГ</p>
+          </div>
+          <div class="footer-text">
+            <a href="toys.html">ИГРУШКИ</a>
+            <a href="cloth.html">ОДЕЖДА</a>
+            <a href="accessories.html">АКСЕССУАРЫ</a>
+          </div>
+        </div>
+        <div class="footer-forbuyers">
+          <div class="footer-title">
+            <p>ПОКУПАТЕЛЯМ</p>
+          </div>
+          <div class="footer-text">
+            <a href="aboutus.html">О НАС</a>
+            <a href="delivery.html">ДОСТАВКА И ОПЛАТА</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-under">
+        <div class="footer-logo">
+          <div class="logo">
+            <a href="index.html"><img src="img/header/logo.png" alt="Логотип"></a>
+          </div>
+        </div>
+        <div class="footer-info">
+          <p>ЕЛЕНА МАИШЕВА</p>
+          <p>+7 (900) 000-00-00</p>
+          <p>MAIL@MAIL.RU</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/header.js"></script>
+  <script src="js/catalogmodal.js"></script>
+  <script src="js/modalQuantityValue.js"></script>
+</body>
+</html>

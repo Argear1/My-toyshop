@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ВАШ ЗАКАЗ</title>
+  <link rel="stylesheet" href="css/order.css">
+</head>
+<body>
+  <header>
+    <div class="header-navigation" id="headerNavigation">
+      <div class="header-flex" id="navItems">
+        <div class="header-navigation-button">
+          <a href="toys.html">ИГРУШКИ</a>
+        </div>
+        <div class="header-navigation-button">
+          <a href="cloth.html">ОДЕЖДА</a>
+        </div>
+        <div class="header-navigation-button">
+          <a href="accessories.html">АКСЕССУАРЫ</a>
+        </div>
+      </div>
+      <div class="logo">
+        <a href="index.html"><img src="img/header/logo.png" alt="Логотип"></a>
+      </div>
+      <div class="header-flex" id="additionalNavItems">
+        <div class="header-navigation-button">
+          <a href="aboutus.html">О НАС</a>
+        </div>
+        <div class="header-navigation-button">
+          <a href="delivery.html">ДОСТАВКА И ОПЛАТА</a>
+        </div>
+      </div>
+    </div>
+  
+    <div id="menu-overlay" onclick="closeMenu()">
+      <div id="nav-items-overlay">
+        <a href="toys.html">ИГРУШКИ</a>
+        <a href="cloth.html">ОДЕЖДА</a>
+        <a href="accessories.html">АКСЕССУАРЫ</a>
+        <a href="aboutus.html">О НАС</a>
+        <a href="delivery.html">ДОСТАВКА И ОПЛАТА</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="title">
+      <p>ВАШ ЗАКАЗ</p>
+    </div>
+    <div class="container-flex">
+      <div class="form">
+        <div class="form-title">
+          <p>ЗАПОЛНИТЕ ФОРМУ:</p>
+        </div>
+        <div class="vacancy-cart-input">
+          <div class="input-name mb">
+            <input type="text" placeholder="КАК ВАС ЗОВУТ">
+          </div>
+          <div class="input-name mb">
+            <input type="text" placeholder="КАК ЗОВУТ ВАШУ СОБАКУ?">
+          </div>
+          <div class="input-mail mb">
+            <input type="email" placeholder="ВАШ EMAIL">
+          </div>
+          <div class="input-phone">
+            <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" maxlength="17" data-phone-pattern>
+          </div>
+          <div class="input-delivery-way mb">
+            <p>СПОСОБ ДОСТАВКИ</p>
+            <div class="input-button">
+              <div class="delivery-option" onclick="selectDelivery(this)">
+                <button></button>
+              </div>
+              <span>Курьер</span>
+            </div>
+            <div class="input-button">
+              <div class="delivery-option" onclick="selectDelivery(this)">
+                <button></button>
+              </div>
+              <span>Почта</span>
+            </div>
+            <div class="input-button">
+              <div class="delivery-option" onclick="selectDelivery(this)">
+                <button></button>
+              </div>
+              <span>Самовывоз</span>
+            </div>
+          </div>
+          <div class="input-comment mb">
+            <p>КОММЕНТАРИЙ К ЗАКАЗУ</p>
+            <textarea rows="4"></textarea>
+          </div>
+          <div class="submit">
+            <button class="submit-button"><a href="thanky.html">ОФОРМИТЬ ЗАКАЗ</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="products">
+        <div class="product-list" id="productList">
+          <!-- Продукт генерируется -->
+        </div>
+
+        <div class="totalsum-price" id="totalPriceContainer">
+          <p>СУММА: <span id="totalSumPrice">0 ₽</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-navigation">
+        <div class="footer-catalog">
+          <div class="footer-title">
+            <p>КАТАЛОГ</p>
+          </div>
+          <div class="footer-text">
+            <a href="toys.html">ИГРУШКИ</a>
+            <a href="cloth.html">ОДЕЖДА</a>
+            <a href="accessories.html">АКСЕССУАРЫ</a>
+          </div>
+        </div>
+        <div class="footer-forbuyers">
+          <div class="footer-title">
+            <p>ПОКУПАТЕЛЯМ</p>
+          </div>
+          <div class="footer-text">
+            <a href="aboutus.html">О НАС</a>
+            <a href="delivery.html">ДОСТАВКА И ОПЛАТА</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-under">
+        <div class="footer-logo">
+          <div class="logo">
+            <a href="index.html"><img src="img/header/logo.png" alt="Логотип"></a>
+          </div>
+        </div>
+        <div class="footer-info">
+          <p>ЕЛЕНА МАИШЕВА</p>
+          <p>+7 (900) 000-00-00</p>
+          <p>MAIL@MAIL.RU</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/header.js"></script>
+  <script src="js/order.js"></script>
+  <script src="js/phone.js"></script>
+</body>
+</html>
