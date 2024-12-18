@@ -61,6 +61,7 @@ body {
 }
 
 .welcome-content {
+  width: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -68,7 +69,6 @@ body {
   bottom: 0;
   z-index: 0;
   overflow: hidden;
-  width: 100%;
 }
 
 .welcome-content img {
